@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Hangman</title>
+    <!-- Scss -->
+    <link rel="stylesheet" href="sass/style.css" />
+    <!-- Js -->
+    <script src="js/script.js" defer="defer"></script>
+  </head>
+  <body>
+    <div id="popup-container">
+        <div id="popup-card">
+            <h2 class="message"></h2>
+            <button type="button" onclick=newGame()>Play again</button>
+        </div>
+    </div>
+    <h1>Hangman</h1>
+    <p>Find the hidden word</p>
+
+    <div class="container">
+      <svg width="250" height="250" class="con">
+        <!-- Table -->
+        <line x1="20" y1="20" x2="130" y2="20" />
+        <line x1="22" y1="20" x2="20" y2="250" />
+        <line x1="128" y1="20" x2="128" y2="60" />
+        <line x1="0" y1="250" x2="80" y2="250" />
+        <!-- Head -->
+        <circle cx="130" cy="80" r="20" class="item"/>
+
+        <!-- Body -->
+        <line x1="130" y1="100" x2="130" y2="180" class="item"/>
+        <!-- Hands -->
+        <line x1="130" y1="140" x2="160" y2="115" class="item"/>
+        <line x1="130" y1="140" x2="100" y2="115" class="item"/>
+        <!-- Legs -->
+        <line x1="130" y1="180" x2="100" y2="205" class="item"/>
+        <line x1="130" y1="180" x2="160" y2="205" class="item"/>
+      </svg>
+
+      <div id="wrong-letters">
+        
+      </div>
+
+      <div id="word"></div>
+    </div>
+    <div id="err-letter">
+      You have already used this character
+    </div>
+  </body>
+</html>

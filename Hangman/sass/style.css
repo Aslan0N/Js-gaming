@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #0f71b7;
+  font-family: monospace;
+}
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 30px 0;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+.container {
+  width: 450px;
+  height: 450px;
+  padding: 20px;
+}
+.container .con {
+  stroke: #fff;
+  stroke-width: 4px;
+  fill: transparent;
+}
+.container .con .item {
+  display: none;
+}
+
+#wrong-letters {
+  top: 100px;
+  right: 200px;
+  position: absolute;
+}
+
+#word {
+  right: 20%;
+  display: flex;
+  position: absolute;
+}
+#word .letter {
+  width: 30px;
+  margin: 0 5px;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: 2px solid rgb(148, 157, 177);
+}
+
+#popup-container {
+  width: 100%;
+  z-index: 99;
+  height: 100%;
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#popup-container #popup-card {
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+  padding: 1.7rem 2rem;
+}
+#popup-container #popup-card button {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 7px;
+  padding: 0.3rem 0.5rem;
+}
+#popup-container #popup-card button:active {
+  transform: scale(0.95);
+}
+
+#err-letter {
+  width: auto;
+  height: auto;
+  padding: 20px 80px;
+  background-color: rgba(0, 0, 0, 0.4078431373);
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  bottom: -80px;
+  left: 35%;
+  transition: all 0.4s ease-in-out;
+}
+
+.show {
+  bottom: 10px !important;
+}/*# sourceMappingURL=style.css.map */
